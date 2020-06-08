@@ -41,18 +41,18 @@ const routes = [
         component: () => import('../pages/page2/page2.vue')
       },
       {
+        path: 'page22',
+        name: 'page22',
+        meta: {
+          scrollTop: 0
+        },
+        component: () => import('../pages/page2/page2.vue')
+      },
+      {
         path: 'page3/:id',
         name: 'page3',
         component: () => import('../pages/page3/page3.vue'),
         props: true
-      },
-      {
-        path: 'demo',
-        name: 'demo',
-        meta: {
-          scrollTop: 0
-        },
-        component: () => import('../pages/demo/demo.vue')
       }
     ]
   }

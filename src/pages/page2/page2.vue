@@ -1,6 +1,6 @@
 <template>
   <div id="page2" :class="$store.state.pageAnimated">
-    page2
+    page2,在下面的输入框输入内容，切换tabs,数据时缓存的
     <el-input type="text" v-model="page2Data"></el-input>
     <br>
   </div>
@@ -20,7 +20,16 @@ export default {
   },
   activated () {
   },
+  watch: {
+    '$route' () {
+      console.log(this.$route)
+    }
+  },
   created () {
+    console.log('page2 created')
+  },
+  mounted () {
+    console.log('page2 Mounted')
   },
   computed: {
   },

@@ -1,6 +1,6 @@
 <template>
   <div id="page1" :class="$store.state.pageAnimated">
-    page1
+    page1,在下面的输入框输入内容，切换tabs,数据时缓存的
     <el-input v-model="input" placeholder="请输入内容"></el-input>
   </div>
 </template>

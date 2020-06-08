@@ -8,7 +8,8 @@ export default new Vuex.Store({
     includePageNames: [], // 保持缓存的页面列表
     tagList: [], // tag标签list
     tagSelected: '0', // 当前tag标签
-    pageAnimated: 'animated fadeInRight faster'
+    pageAnimated: 'animated fadeInRight faster',
+    pageCache: []
   },
   mutations: {
     initAnimated: state => {

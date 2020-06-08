@@ -1,7 +1,7 @@
 <template>
   <div id="page3" :class="$store.state.pageAnimated">
     page3(可复用页面)
-    <el-input type="text" v-model="id"></el-input>
+    <el-input type="text" v-model="test"></el-input>
   </div>
 </template>
 
@@ -9,7 +9,8 @@
 export default {
   data () {
     return {
-      test: ''
+      test: '',
+      dataList: []
     }
   },
   props: {
@@ -24,7 +25,6 @@ export default {
     }
   },
   created () {
-    console.log('page3 Created')
   },
   mounted () {
     console.log('page3 Mounted')
@@ -35,6 +35,7 @@ export default {
   computed: {
   },
   methods: {
+
   }
 }
 </script>

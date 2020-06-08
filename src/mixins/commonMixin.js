@@ -15,11 +15,15 @@ commonMixin = {
         this.$router.push({ path: '/home/' + name })
       }
     },
-    pushPage3 (id) {
-      this.$router.push({ path: `/home/page3/${id}` })
+    pushPage3 (url, param) {
+      if (param) {
+        this.$router.push({ path: `/home/${url}/${param}` })
+      } else {
+        this.$router.push({ path: `/home/${url}` })
+      }
     },
     addTagPage (name, url, text, param) {
-      this.pushPage3(param)
+      this.pushPage3(url, param)
       if (this.$store.state.tagList[0] === undefined) {
         let arr = { text: text, url: url, param: param }
         this.$store.state.includePageNames.push(name)
