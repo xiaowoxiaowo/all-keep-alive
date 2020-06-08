@@ -1,0 +1,27 @@
+/* 改变主题色变量 */
+/*$--color-primary: teal;*/
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+/**
+ * 通用的重写组件的样式
+ */
+.el-message,
+.v-modal,
+.el-notification{
+  z-index: 100000!important;
+}
+.el-message-box__wrapper,
+.el-dialog__wrapper{
+  z-index: 100001!important;
+}
+.tagBox .el-tabs__header{
+  margin: 0!important;
+}
+.tagBox .el-tabs__nav{
+  border-left: none!important;
+  border-top: none!important;
+}
+
+@import "~element-ui/packages/theme-chalk/src/index";

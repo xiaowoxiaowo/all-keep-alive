@@ -1,0 +1,68 @@
+#home{
+  &>header{
+    height: 80px;
+    border-bottom: 1px solid #E4E7ED;
+    position: relative;
+    z-index: 99999;
+    background: white;
+  }
+  &>.content{
+    height: calc(100vh - 81px);
+    .leftBox{
+      position: relative;
+      z-index: 99999;
+      background: white;
+      float: left;
+      width: 150px;
+      height: 100%;
+      border-right: 1px solid #E4E7ED;
+      div{
+        line-height: 35px;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+          background: #ccc;
+        }
+      }
+    }
+    .rightBox{
+      float: left;
+      width: calc(100% - 151px);
+      height: 100%;
+      .tagBox{
+        position: relative;
+        z-index: 99999;
+        background: white;
+        height: 40px;
+        .tag{
+          position: relative;
+          display: inline-block;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          padding: 0px 20px 0px 10px;
+          border-right: 1px solid #E4E7ED;
+          cursor: pointer;
+          &:hover,&.active{
+            background: #ccc;
+            color: white;
+          }
+          span{
+            position: absolute;
+            right: 5px;
+            top:10px;
+            height: 20px;
+            line-height: 20px;
+            cursor: pointer;
+            font-size: 12px;
+          }
+        }
+      }
+      #routerBox{
+        height: calc(100% - 40px);
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+    }
+  }
+}
