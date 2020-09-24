@@ -4,5 +4,5 @@ module.exports = {
   devServer: {
     open: true //浏览器自动打开页面
   },
-  publicPath: '/all-keep-alive/dist/'
+  publicPath: '/demo/allKeepAlive'
 }

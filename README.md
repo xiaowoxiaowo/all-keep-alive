@@ -29,6 +29,10 @@ export default {
   <router-view :key="$route.fullPath" />
 </all-keep-alive>
 ```
+
+[例子](http://zouxiaowo.cn/demo/allKeepAlive/home)
+
+
 欢迎大家star，提供issues。
 
 ## License
