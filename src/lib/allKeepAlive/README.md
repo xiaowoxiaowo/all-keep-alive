@@ -29,7 +29,7 @@ export default {
   <router-view :key="$route.fullPath" />
 </all-keep-alive>
 ```
-
+[github](https://github.com/xiaowoxiaowo/all-keep-alive)
 欢迎大家star，提供issues。
 
 ## License

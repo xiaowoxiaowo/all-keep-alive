@@ -34,7 +34,7 @@
 
 <script type="text/ecmascript-6">
 import { mapState } from 'vuex'
-import { allKeepAlive } from '@/config/all-keep-alive'
+import { allKeepAlive } from 'all-keep-alive'
 export default {
   name: 'home',
   components: { allKeepAlive },
