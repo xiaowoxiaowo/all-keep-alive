@@ -26,7 +26,11 @@ commonMixin = {
       this.pushPage3(url, param)
       if (this.$store.state.tagList[0] === undefined) {
         let arr = { text: text, url: url, param: param }
-        this.$store.state.includePageNames.push(name)
+        if (param) {
+          this.$store.state.includePageNames.push(`/home/${name}/${param}`)
+        } else {
+          this.$store.state.includePageNames.push(`/home/${name}`)
+        }
         this.$store.state.tagList.push(arr)
         this.$store.state.tagSelected = (this.$store.state.tagList.length - 1) + ''
       } else {
@@ -37,7 +41,11 @@ commonMixin = {
           } else {
             if (index === this.$store.state.tagList.length - 1) {
               let arr = { text: text, url: url, param: param }
-              this.$store.state.includePageNames.push(name)
+              if (param) {
+                this.$store.state.includePageNames.push(`/home/${name}/${param}`)
+              } else {
+                this.$store.state.includePageNames.push(`/home/${name}`)
+              }
               this.$store.state.tagList.push(arr)
               this.$store.state.tagSelected = (this.$store.state.tagList.length - 1) + ''
             }

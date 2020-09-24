@@ -13,11 +13,14 @@ export default {
       input: ''
     }
   },
+  activated () {
+    console.log('page1 activated')
+  },
   created () {
-    //this.id = this.$route.params.id
+    console.log('page1 created')
   },
   mounted () {
-    this.id = this.$route.params.id
+    console.log('page1 Mounted')
   },
   computed: {
   },

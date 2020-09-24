@@ -23,9 +23,9 @@
           </el-tabs>
         </div>
         <div id="routerBox">
-          <keep-alive :include="includePageNames">
-            <router-view/>
-          </keep-alive>
+          <all-keep-alive :include="includePageNames">
+            <router-view :key="$route.fullPath" />
+          </all-keep-alive>
         </div>
       </div>
     </div>
@@ -34,8 +34,10 @@
 
 <script type="text/ecmascript-6">
 import { mapState } from 'vuex'
+import { allKeepAlive } from '@/config/all-keep-alive'
 export default {
   name: 'home',
+  components: { allKeepAlive },
   data () {
     return {
     }
@@ -76,13 +78,13 @@ export default {
             this.$store.state.tagList.splice(num, 1)
             this.$store.state.includePageNames.splice(num, 1)
             this.$store.state.tagSelected = (num - 1) + ''
-            this.pushPage(this.$store.state.tagList[num - 1].url, this.$store.state.tagList[num - 1].param)
+            this.pushPage3(this.$store.state.tagList[num - 1].url, this.$store.state.tagList[num - 1].param)
           }
         } else {
           //当关闭页面是非唯一的页面
           this.$store.state.tagList.splice(num, 1)
           this.$store.state.includePageNames.splice(num, 1)
-          this.pushPage(this.$store.state.tagList[num].url, this.$store.state.tagList[num].param)
+          this.pushPage3(this.$store.state.tagList[num].url, this.$store.state.tagList[num].param)
         }
       } else {
         //当关闭页面不是当前页

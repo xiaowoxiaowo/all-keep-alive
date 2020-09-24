@@ -19,11 +19,7 @@ export default {
     }
   },
   activated () {
-  },
-  watch: {
-    '$route' () {
-      console.log(this.$route)
-    }
+    console.log('page2 activated')
   },
   created () {
     console.log('page2 created')

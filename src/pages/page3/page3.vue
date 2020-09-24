@@ -21,16 +21,18 @@ export default {
   },
   watch: {
     id (newVal) {
-      console.log(newVal)
+      //console.log(newVal)
     }
   },
+  activated () {
+    console.log('page3 activated')
+  },
   created () {
+    console.log(this.$route)
+    console.log('page3 created')
   },
   mounted () {
     console.log('page3 Mounted')
-  },
-  destroyed () {
-    console.log('page3 destroyed')
   },
   computed: {
   },
