@@ -1,4 +1,4 @@
-# all-keep-alive
+# all-keep-alive [![npm package](https://img.shields.io/npm/v/all-keep-alive.svg)](https://www.npmjs.com/package/all-keep-alive)
 
 ## Features
 
