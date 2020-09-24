@@ -1,0 +1,15 @@
+{
+  "name": "all-keep-alive",
+  "version": "1.0.2",
+  "description": "vue缓存所有的页面，包括复用页面",
+  "main": "src/all-keep-alive.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "all-keep-alive",
+    "keep-alive"
+  ],
+  "author": "zoujiatong",
+  "license": "ISC"
+}
