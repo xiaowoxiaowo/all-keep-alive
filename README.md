@@ -20,6 +20,8 @@ export default {
 }
 ```
 
+API跟vue自带的keep-alive组件一样
+
 ```html
 // 复用页面跳转的时候，路由不会跳转，所以需要在路由组件上添加一个key
 // 需要把组件的路由地址传入到include数组中
