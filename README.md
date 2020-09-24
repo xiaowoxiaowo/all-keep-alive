@@ -32,7 +32,7 @@ API跟vue自带的keep-alive组件一样
 </all-keep-alive>
 ```
 
-[例子](http://zouxiaowo.cn/demo/allKeepAlive/home)
+[例子](http://zouxiaowo.cn/demo/allKeepAlive)
 
 
 欢迎大家star，提供issues。
