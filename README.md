@@ -34,6 +34,9 @@ API跟vue自带的keep-alive组件一样
 
 [例子](http://zouxiaowo.cn/demo/allKeepAlive)
 
+**注意：这是vue2的版本**
+
+vue3正式版上周刚出，后续我再加个vue3的版本吧
 
 欢迎大家star，提供issues。
 
